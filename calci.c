@@ -5,7 +5,7 @@ int main() {
     int choice;
 
     printf("Select operation: \n");
-    printf("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+    printf("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n 5, Square\n");
     printf("Enter choice: ");
     scanf("%d", &choice);
     
@@ -22,7 +22,11 @@ int main() {
             else 
                 printf("Error: Division by zero\n");
             break;
+        case 5:
+                printf("Square = %.2f\n", a*a);
+                break;
         default: printf("Invalid operation\n");
+        
     }
     return 0;
 }
